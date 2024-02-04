@@ -1,8 +1,97 @@
-# React + Vite
+#### UploadAvatar Interview test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interview project for the UploadAvatar component, a React component designed for handling avatar uploads with Chakra UI.
+Overview
 
-Currently, two official plugins are available:
+The UploadAvatar component allows users to upload an avatar image. It features an avatar display, a file input hidden behind a camera icon, and the ability to handle image uploads with size validation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Installation
+
+To use the UploadAvatar component, follow these steps:
+
+Install Chakra UI in your React project if not already installed:
+
+```bash
+
+npm install @chakra-ui/react react-icons
+
+```
+
+1. **Import the necessary Chakra UI components and icons:**
+
+````javascript
+
+import {
+  Avatar,
+  InputGroup,
+  Input,
+  InputLeftElement,
+  Card,
+  CardHeader,
+} from "@chakra-ui/react";
+import { FaCamera } from "react-icons/fa";
+
+**2. Import the UploadAvatar component:**
+
+```javascript
+
+import UploadAvatar from "./components/UploadAvatar";
+````
+
+#### Usage
+
+// Integrate the UploadAvatar component in your React application as follows:
+
+```javascript
+import React from "react";
+import UploadAvatar from "./components/UploadAvatar"; 
+
+const YourComponent = () => {
+  return (
+    <div>
+      <UploadAvatar />
+    </div>
+  );
+};
+```
+
+export default YourComponent;
+
+#### Features
+
+1. Avatar Display
+
+2.The component displays an avatar with a default image (if none is selected) and a name.
+Upload Icon
+
+3. A camera icon is provided to trigger the file input for uploading an image.
+   File Size Validation
+
+4. The component checks the size of the uploaded image. If the size exceeds 512KB, an alert is shown, and the file input is cleared.
+   Usage Example
+
+### Clone the repository:
+
+```bash
+
+git clone https://github.com/ATTAEBRIZINI000/Internship_project.git
+```
+
+### Install dependencies:
+
+```bash
+
+npm install
+```
+
+Make changes to the component as needed.
+
+Test your changes:
+
+```bash
+
+npm test
+
+```
+
+    Submit a pull request with your changes.
