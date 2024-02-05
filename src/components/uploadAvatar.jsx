@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Avatar, InputGroup, Input, InputLeftElement } from "@chakra-ui/react";
 import { Card, CardHeader } from "@chakra-ui/react";
 import { FaCamera } from "react-icons/fa";
+import imageTest from "../assets/imageTest.png"
 
 const UploadAvatar = () => {
   const fileInputRef = useRef(null);
@@ -39,7 +40,7 @@ const UploadAvatar = () => {
       width="50%"
       height="300px"
       mt="20"
-      oxShadow='md'
+      shadow="md"
     
     >
       <CardHeader
@@ -54,7 +55,7 @@ const UploadAvatar = () => {
           px="1"
           size="2xl"
           name="Segun Adebayo"
-          src={selectedImage || "https://bit.ly/sage-adebayo"}
+          src={selectedImage || imageTest }
           style={{ backgroundColor: 'rgba(55, 215, 165, 1)' }}
         />
 
