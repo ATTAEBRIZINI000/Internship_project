@@ -56,7 +56,7 @@ const UploadAvatar = () => {
           size="2xl"
           name="Segun Adebayo"
           src={selectedImage || imageTest }
-          style={{ backgroundColor: 'rgba(55, 215, 165, 1)' }}
+          style={{ backgroundColor: 'rgba(255, 223, 0, 1)' }}
         />
 
         <InputGroup
